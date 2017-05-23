@@ -15,8 +15,9 @@ public class GCDTest {
 	@Parameters
 	public static Collection<Object[]> data() {
 		return Arrays.asList(new Object[][] { { "simple case", 6, 3, 3 }, { "simple case rev", 3, 6, 3 },
-				{ "relatively prime", 10, 6, 1 }, { "relatively prime rev", 6, 10, 1 },
-				{"zero", 11,0,0},{"zero rev", 0,11,0},
+				{ "another", 10, 6, 2 }, { "another rev", 6, 10, 2 },
+				{ "relatively prime", 10, 3, 1 }, { "relatively prime rev", 3, 10, 1 },
+				{"zero", 11,0,11},{"zero rev", 0,11,11},
 				// examples from
 				// http://cs.au.dk/~chili/PBI04/ExamplePrograms/gcd_function_test.py
 				{ "trick case: a = b", 13, 13, 13 }, { "first argument is a prime", 37, 600, 1 },
